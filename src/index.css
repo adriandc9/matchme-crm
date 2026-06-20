@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 40px;
+  background-color: #272727;
+}
+h2 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #dadada;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 575px;
+  margin: 0 auto;
+}
+.card {
+  border: 2px solid #375bb7;
+  padding: 20px;
+  margin: 10px;
+  background-color: #9c9c9c;
+}
+button {
+  border: none;
+  font-size: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
