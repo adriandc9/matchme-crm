@@ -3,3 +3,9 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+.van-elegant {
+    transform: translate(-100%, calc(-100% + 80px));
+}
+.h-stretch {
+  height: stretch;
+}
