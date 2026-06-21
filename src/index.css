@@ -4,8 +4,44 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 .van-elegant {
-    transform: translate(-100%, calc(-100% + 80px));
+    transform: translate(-100%, calc(-100% - 24px));
 }
 .h-stretch {
   height: stretch;
+}
+.gradient-gray {
+  background: linear-gradient(
+    90deg,
+    #FCFCFC 0%,
+    #D9D9D9 51%,
+    #D0D0D0 84%,
+    #A4A4A4 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-orange {
+  background: linear-gradient(
+    90deg,
+    #FFC57E 0%,
+    #FFC66B 5%,
+    #FF8525 51%,
+    #FF8525 76%,
+    #FF691F 95%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-black {
+  background: linear-gradient(90deg, #000000 53%, #393939 100%);
+}
+@media only screen and (max-width:1023px) {
+  .gradient-black {
+    background: linear-gradient( 180deg, #000000 53%, #393939 100%);
+  }
+}
+.gradient-floor {
+  background: linear-gradient(90deg,#292929 0%,#505050 100%);
 }

@@ -83,17 +83,43 @@ const App = () => {
 
       </aside>
 
-      <section className='min-h-[95vh] pt-14 overflow-hidden relative bg-gray-900'>
-        <div className='h-[12%] w-full absolute bottom-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900'></div>
+      <section className='min-h-[95vh] xl:min-h-[98vh] 2xl:min-h-[95vh] pt-14 overflow-hidden relative gradient-black'>
+        <div className='h-[12%] w-full absolute bottom-0 gradient-floor'></div>
           <div class="max-w-screen-2xl m-auto h-stretch absolute w-full left-[50%] -translate-x-1/2 flex justify-center lg:justify-end">
             <div className='flex flex-col justify-start items-center lg:items-end pt-10 px-7 pb-5'>
-              <img src={mmcfHeroLogo} className='mb-[3%]' alt='Match:Me' />
-              <h2 className='text-4xl font-semibold text-white leading-16'>Find Your</h2>
-              <h1 className='text-8xl xl:text-9xl text-center lg:text-end font-bold text-white leading-[0.85]'>Perfect VAN<br className='hidden lg:block'></br> Deal</h1>
-              <h2 className='text-4xl font-semibold text-white leading-16'>in minutes</h2>
-              <img className='lg:hidden w-4/5' src={vanElegant} alt='Match:Me' />
+              <img src={mmcfHeroLogo} className='h-[6vh] lg:h-[7vh] mb-[3vh]' alt='Match:Me' />
+              <h2 className='text-4xl font-semibold text-white leading-[1.2em]'>Find Your</h2>
+              <h1 className='text-[10vh] lg:text-8xl xl:text-9xl text-center lg:text-end font-bold text-white leading-[0.8]'><span className='gradient-gray'>Perfect</span> <span className='gradient-orange'>VAN</span><br className='hidden lg:block'></br> <span className='gradient-gray'>Deal</span></h1>
+              <h2 className='text-4xl font-semibold text-white leading-[1.2em]'>in minutes</h2>
+              <form className='hidden lg:flex flex-col items-center gap-4 mt-[2vh] text-center w-[450px] bg-neutral-800/90 rounded-2xl px-7 py-12 xl:py-8'>
+                <h3 className='text-xl text-center text-white'>How much do you need?</h3>
+                <div className="relative w-[75%]">
+                  <span className="absolute left-0 top-1/2 -translate-y-1/2 text-3xl text-white">
+                    £
+                  </span>
+                  <input
+                    type="number"
+                    placeholder=""
+                    className="
+                      w-full
+                      bg-transparent
+                      border-b
+                      border-gray-300
+                      pl-8
+                      pb-2
+                      text-3xl
+                      text-white
+                      placeholder:text-gray-400
+                      focus:outline-none
+                      focus:border-white
+                    "
+                  />
+                </div>
+                <small className='font-sm text-light text-white'>No impact on your credit score</small>
+                <button className='w-fit bg-orange-500 rounded-full text-md font-light cursor-pointer text-white py-1 px-6'>Get started</button>
+              </form>
             </div>
-            <img className='van-elegant hidden lg:block absolute top-full left-[45%] xl:left-[50%] h-[calc(70vh-56px)] max-w-none -translate-y-1/4' src={vanElegant} alt='Match:Me' />
+            <img className='van-elegant absolute h-[40vh] top-full left-[98%] lg:left-[45%] xl:left-[50%] lg:h-[calc(85vh-56px)] max-w-none' src={vanElegant} alt='Match:Me' />
         </div>
       </section>
 
